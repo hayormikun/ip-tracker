@@ -3,3 +3,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#topSection {
+    background-image: url('/assets/pattern-bg-desktop.png');
+    background-color: rgb(67, 10, 67);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+}
+
+.leaflet-container {
+    height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+    #topSection {
+        background-image: url('/assets/pattern-bg-mobile.png');
+        background-color: rgb(67, 10, 67);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: fit-content;
+    }
+  }
